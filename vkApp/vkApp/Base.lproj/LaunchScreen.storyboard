@@ -14,13 +14,37 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="vkLogo" translatesAutoresizingMaskIntoConstraints="NO" id="4Pr-M9-zop">
+                                <rect key="frame" x="112.66666666666669" y="331" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="5rm-3F-rLm"/>
+                                    <constraint firstAttribute="height" constant="150" id="yf2-mq-Zlk"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to VK App" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k8C-3t-gyc">
+                                <rect key="frame" x="62" y="487" width="251" height="33"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="k8C-3t-gyc" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="PPu-lV-3B5"/>
+                            <constraint firstItem="4Pr-M9-zop" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="SGo-sk-RPt"/>
+                            <constraint firstItem="4Pr-M9-zop" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="ljZ-Ir-eGH"/>
+                            <constraint firstItem="k8C-3t-gyc" firstAttribute="top" secondItem="4Pr-M9-zop" secondAttribute="bottom" constant="6" id="pp0-uF-z3p"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="52.173913043478265" y="375"/>
+            <point key="canvasLocation" x="52" y="374.6305418719212"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="vkLogo" width="72.333335876464844" height="72.333335876464844"/>
+    </resources>
 </document>
